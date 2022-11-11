@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helping Hands</title>
+    <meta property="og:title" content="Helping Hands" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <script src="./script.js"></script>  
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}
+      body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
+      button {  background-color: transparent;}
+      button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
+      a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: #000000;
+        background-color: #FFFFFF;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <link href="./landing-page.css" rel="stylesheet" />
+        <div class="landing-page-container">
+            <div class="landing-page-top-container">
+                <nav data-role="Header" class="landing-page-navbar">
+                    <div id="navBarLeft">
+                    <h1>Helping Hands</h1>
+                    </div>
+                    <div class="landing-page-right-side">
+                    <div class="landing-page-links-container">
+                        <span class="landing-page-text"><a href="index.html">Home</a></span>
+                        <span class="landing-page-text01"><a href="#">About</a></span>
+                        <span class="landing-page-text02"><a href="#">Text 3</a></span>
+                        <span class="landing-page-text03"><a href="#">Contact</a></span>
+                    </div>
+                    </div>
+                </nav>
+                </div>
+                <div id="main-section" class="donate-page-main">
+                    <div class="donate-area relative section-gap" id="donate">
+                        <div class="blackLayer" id="donationForm">
+                            <div class="row">
+                                <div class="contact-right">
+                                    <div class="header-text">
+                                        <h1>Donate Now</h1>
+                                    </div>
+                                    <form class="booking-form" id="myForm" action="donationSucess.html">
+                                            <div class="row">
+                                                <div class="flex-column dropdown">
+                                                    <select name="type" class="app-select form-control" required>
+                                                        <option data-display="Project you want to donate">Project you want to donate</option>
+                                                        <option value="1">Donate type 1</option>
+                                                        <option value="2">Donate type 2</option>
+                                                        <option value="3">Donate type 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <input type="checkbox" id="donateAnonCKB" onchange="check()"><label style="color: white">Donate Anonymously</label>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <input name="fname" id="userName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text">
+                                                </div>
+                                                <div class="flex-column">
+                                                    <input name="email" id="userEmail" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
+                                                </div>
+                                                <div class="flex-column">
+                                                    <input name="amount" placeholder="Donation amount (USD)" pattern="[0-9]$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Donation amount (USD)'" class="form-control mt-20" required="" type="text">
+                                                </div>
+                                                <div class="flex-column">
+                                                    <textarea class="form-control mt-20" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                                </div>
+                                                <div class="flex-column">
+                                                    <button>Donate<span class="lnr lnr-arrow-right"></span></button>
+                                                </div>
+                                                <div class="alert-msg"></div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>   
+  </body>
