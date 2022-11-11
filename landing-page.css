@@ -37,6 +37,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: solid 1px lightgray;
+  border-radius: 10px;
 }
 .place-card-image {
   width: 100%;
@@ -52,6 +54,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
+  border: solid 1px darkgray;
 }
 .place-card-text {
   font-size: 20px;
@@ -60,7 +63,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .place-card-text1 {
-  font-size: 12px;
+  font-size: 15px;
   max-width: 250px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
@@ -97,6 +100,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 6%;
 }
 .landing-page-links-container {
   display: flex;
@@ -194,6 +198,9 @@
 #navBarLeft{
   padding-left: 4%;
 }
+button{
+  cursor: pointer;
+}
 
 /* ---- Donate Page ----- */
 
@@ -231,7 +238,7 @@
   text-align: center;
 }
 .flex-column{
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 .flex-column select, input, textarea{
   width: 350px;
@@ -248,7 +255,7 @@
 .donate-area .header-text h1{
   color:#fff;
   margin-bottom:20px;
-  padding-top: 25px;
+  padding-top: 5px;
 }
 
 .donate-area .contact-right .form-control{
@@ -285,4 +292,95 @@
 
 #donateAnonCKB{
   width: 30px;
+}
+
+/* login page */
+
+
+.login{
+  padding-top: 10%;
+}
+.login-block {
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 0 auto;
+  background-color: lightgray !important;
+}
+
+.login-block h1 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.login-block input {
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 0 20px 0 50px;
+  outline: none;
+}
+
+.login-block input#username {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+  border: 1px solid black;
+}
+
+.login-block button {
+  width: 70%;
+  height: 40px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat;
+  outline: none;
+  cursor: pointer;
+}
+#loginSubmitBtn{
+  padding-left: 20%;
+}
+
+.login-block button:hover {
+  background: darkgray;
+}
+
+#backBtn{
+  color: white;
+  border: solid 1px white;
+  width: 10%;
 }

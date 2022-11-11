@@ -60,26 +60,60 @@
           </nav>
         </div>
         <div id="main-section" class="landing-page-main">
-          <div >
-            <img
-                alt="image"
-                src="../img/check.png"
-              />
+          <div style="border: solid 1px drakgray; background:lightgray; border-radius:5px;">
+          <div style="padding: 35px 30px 30px 40px;">
+            <div class="col-md-6" style="padding-top: 15px;">
+              <form action="UserLogin.html">
+                <button id="backAppBtn">Back<span class="lnr lnr-arrow-right"></span></button>
+              </form>
+              </div>
+            <div style="padding-bottom: 5px">
+              <h2>Schedule an Appointment</h1>
             </div>
-              <div style="font-size:20px; font-weight:bold;">
-                <span>
-                  Thank You for choosing Helping Hands.
-                </span>
-                <br/>
-                <span style="padding-left:40px;">
-                  Your donation is successful.
-                </span>
-          </div>
-          <div class="col-md-6" style="padding-top: 15px;">
-            <form action="UserLogin.html">
-              <button id="backAppBtn">Back to Home<span class="lnr lnr-arrow-right"></span></button>
-            </form>
+          <form action="confirmationApp.html" id="ft-form">
+            <fieldset>
+              <label>
+                Name
+                <div><input type="text" name="name" style="width: 350px !important;" required></div>
+              </label>
+              <div class="two-cols">
+                <label>
+                  Email address
+                  <input type="email" name="email" required>
+                </label>
+                <label>
+                  Phone number
+                  <input type="tel" name="phone">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="two-cols">
+                <label>
+                  Date
+                  <input type="date" name="Appointment request" required>
+                </label>
+                <div class="inline">
+                  <label>
+                    <input type="hidden" name="Morning desired" value="no">
+                    <input type="checkbox" name="Morning desired" value="yes">
+                    Morning
+                  </label>
+                  <label>
+                    <input type="hidden" name="Afternoon desired" value="no">
+                    <input type="checkbox" name="Afternoon desired" value="yes">
+                    Afternoon
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="btns">
+              <input type="submit" value="Schedule">
             </div>
+          </form>
+
+        </div>
+        </div>
       </div>
       </div>
     </div>

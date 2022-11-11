@@ -49,10 +49,10 @@
                     </div>
                     <div class="landing-page-right-side">
                     <div class="landing-page-links-container">
-                        <span class="landing-page-text"><a href="index.html">Home</a></span>
+                        <span class="landing-page-text"><a href="UserLogin.html">Home</a></span>
                         <span class="landing-page-text01"><a href="#">About</a></span>
-                        <span class="landing-page-text02"><a href="#">Text 3</a></span>
-                        <span class="landing-page-text03"><a href="#">Contact</a></span>
+                        <span class="landing-page-text02"><a href="#">Contact Us</a></span>
+                        <span class="landing-page-text03"><a href="index.html">Log Out</a></span>
                     </div>
                     </div>
                 </nav>
@@ -62,17 +62,25 @@
                         <div class="blackLayer" id="donationForm">
                             <div class="row">
                                 <div class="contact-right">
-                                    <div class="header-text">
+                                    <div class="row header-text">
+                                        <div class="col-md-6" style="padding-top: 15px;">
+                                        <form action="UserLogin.html">
+                                                <button id="backBtn">Back<span class="lnr lnr-arrow-right"></span></button>
+                                        </form>
+                                    </div>                                     
                                         <h1>Donate Now</h1>
                                     </div>
                                     <form class="booking-form" id="myForm" action="donationSucess.html">
                                             <div class="row">
                                                 <div class="flex-column dropdown">
                                                     <select name="type" class="app-select form-control" required>
-                                                        <option data-display="Project you want to donate">Project you want to donate</option>
-                                                        <option value="1">Donate type 1</option>
-                                                        <option value="2">Donate type 2</option>
-                                                        <option value="3">Donate type 3</option>
+                                                        <option data-display="Project you want to donate" disabled selected>Select Orphanage</option>
+                                                        <option value="1">Transparent Hands</option>
+                                                        <option value="2">Feeding America</option>
+                                                        <option value="3">Feed the Children</option>
+                                                        <option value="4">United Way</option>
+                                                        <option value="5">Direct Relief</option>
+                                                        <option value="6">World Relief</option>
                                                     </select>
                                                 </div>
                                                 <div class="flex-column">
@@ -82,13 +90,13 @@
                                                     <input name="fname" id="userName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text">
                                                 </div>
                                                 <div class="flex-column">
-                                                    <input name="email" id="userEmail" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
+                                                    <input name="email" id="userEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
                                                 </div>
                                                 <div class="flex-column">
-                                                    <input name="amount" placeholder="Donation amount (USD)" pattern="[0-9]$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Donation amount (USD)'" class="form-control mt-20" required="" type="text">
+                                                    <input name="amount" placeholder="Donation amount (USD)" pattern="[0-9]{1,10}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Donation amount (USD)'" class="form-control mt-20" required="" type="text">
                                                 </div>
                                                 <div class="flex-column">
-                                                    <textarea class="form-control mt-20" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                                    <textarea class="form-control mt-20" name="message" placeholder="Message(Optional)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" ></textarea>
                                                 </div>
                                                 <div class="flex-column">
                                                     <button>Donate<span class="lnr lnr-arrow-right"></span></button>
