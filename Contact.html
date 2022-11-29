@@ -47,64 +47,44 @@
             <div class="landing-page-top-container">
                 <nav data-role="Header" class="landing-page-navbar">
                     <div id="navBarLeft">
-                      <a href="UserLogin.html">
-                        <h1>Helping Hands</h1>
-                        </a>                    </div>
+                    <h1>Helping Hands</h1>
+                    </div>
                     <div class="landing-page-right-side">
                     <div class="landing-page-links-container">
                         <span class="landing-page-text"><a href="UserLogin.html">Home</a></span>
                         <span class="landing-page-text01"><a href="AboutUs.html">About</a></span>
-                        <span class="landing-page-text02"><a href="Contact.html">Contact Us</a></span>
                         <span class="landing-page-text03"><a href="index.html">Log Out</a></span>
                     </div>
                     </div>
                 </nav>
                 </div>
                 <div id="main-section" class="donate-page-main">
-                    <div class="donate-area relative section-gap" id="donate" style="padding-top: 10px;">
+                    <div class="donate-area relative section-gap" id="donate" style="padding-top: 25px;">
                     <div class="contact-right">
                         <div class="donate-block" id="myForm">
                             <div id="loginHeading">
                                 <h1>Donate Now</h1>
                             </div>
-                            <label for ="orphanageSelect" >Orphanage</label>
                             <form action="donationSucess.html">
+                                <div >
+                                    <label for="contacgUserName" >Name :</label>
+                                    <input name="fname" id="contactUserName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text" required>
+                                </div>
+                                <div >
+                                    <label for="contactUserEmail" >Email :</label>
+                                    <input name="email" id="contactUserEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
+                                </div>
                                 <div class="flex-column dropdown">
                                     <select name="type" class="app-select form-control" id="orphanageSelect" required>
-                                        <option value="" selected>Select Orphanage</option>
-                                        <option value="1">Transparent Hands</option>
-                                        <option value="2">Feeding America</option>
-                                        <option value="3">Feed the Children</option>
-                                        <option value="4">United Way</option>
-                                        <option value="5">Direct Relief</option>
-                                        <option value="6">World Relief</option>
-                                        <option value="7">Hope and Homes for Children</option>
-                                        <option value="8">SOS Children's Villages</option>
-                                        <option value="9">Love Without Boundaries</option>
-                                        <option value="10">Coptic Orphans</option>
-                                        <option value="11">World Orphans</option>
-                                        <option value="12">Empower Orphans</option>
-                                        <option value="13">Mercy Home for Boys & Girls</option>
+                                        <option value="" selected>What can we help you with?</option>
+                                        <option value="1">General enquiry & feedback</option>
+                                        <option value="2">Topic suggestion</option>
+                                        <option value="3">Tell us your Orphange needs</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="donateAnonCKB" onchange="check()" style="height: 15px !important;"><label style="color: black">Donate Anonymously</label>
-                                </div>
-                                <div >
-                                    <label for="donateUserName" >Name :</label>
-                                    <input name="fname" id="donateUserName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text" required>
-                                </div>
-                                <div >
-                                    <label for="donateUserEmail" >Email :</label>
-                                    <input name="email" id="donateUserEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
-                                </div>
-                                <div >
-                                    <label for="donateAmount" >Donation Amount(USD) :</label>
-                                    <input name="amount" id="donateAmount" placeholder="Donation amount (USD)" pattern="[0-9]{1,}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Donation amount (USD)'" class="form-control mt-20" required type="text">
-                                </div>
-                                <div>
-                                    <label for="message" >Message(Optional) :</label>
-                                    <textarea class="form-control mt-20" name="message" placeholder="Message(Optional)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" ></textarea>
+                                    <label for="message" >How can we help you ?</label>
+                                    <textarea class="form-control mt-20" name="message" placeholder="How can we help you ?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required></textarea>
                                 </div>
                                 <div class="row">
                                     <a href="UserLogin.html" id="backBtnRef">
@@ -114,7 +94,7 @@
                                       </a>
                                       <a href="" style="padding-left: 15px;" id="donateBtnRef">
                                         <button class="outline-button-button button Button" id="donateBtn">
-                                          <span>Donate</span>
+                                          <span>Contact Us</span>
                                         </button>
                                       </a>
                                 </div>

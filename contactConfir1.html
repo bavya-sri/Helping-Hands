@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="./script.js"></script>  
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}
@@ -39,9 +37,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
       data-tag="font"
     />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./appointment.css" />
   </head>
   <body>
     <div>
@@ -50,44 +47,42 @@
         <div class="landing-page-top-container" id="navbar">
           <nav data-role="Header" class="landing-page-navbar">
             <div id="navBarLeft">
-              <a href="index.html">
-                <h1>Helping Hands</h1>
-                </a>            </div>
+                <a href="index.html">
+                    <h1>Helping Hands</h1>
+                    </a>            </div>
             <div class="landing-page-right-side">
               <div class="landing-page-links-container">
                 <span class="landing-page-text"><a href="index.html">Home</a></span>
                 <span class="landing-page-text01"><a href="AboutUs1.html">About</a></span>
-                <span class="landing-page-text03"><a href="contactUS1.html">Contact Us</a></span>
+                <span class="landing-page-text02"><a href="contactUS1.html">Contact Us</a></span>
+                <span class="landing-page-text03"><a href="login.html">LogIn</a></span>
               </div>
             </div>
           </nav>
         </div>
         <div id="main-section" class="landing-page-main">
-          <div class="login-block">
-            <div id="loginHeading">
-              <h1>Login</h1>
+          <div >
+            <img
+                alt="image"
+                src="check.png"
+              />
             </div>
-            <form action="UserLogin.html">
-            <div id="userName">
-              <label for="username">UserName :</label>
-              <input type="text" id="username" required>
-            </div>
-
-            <div class="password-container" id="password">
-              <label for="passwordField">Password :</label>
-              <input type="password" id="passwordField">
-              <a onClick="changeEye()"><i class="far fa-eye" id="eye"></i></a>
-            </div>
-            <div id="loginSubmitBtn">
-              <button>Login</button>
-            </div>
-          </form>
-        </div>
-        </div>
-      </div>
+              <div style="font-size:20px; font-weight:bold;">
+                <span>
+                  Thank You for contacting us.
+                </span>
+                <br/>
+                <span style="padding-left:40px;">
+                  We have received your request.
+                </span>
           </div>
-        </div>
+          <div class="col-md-6" style="padding-top: 15px;">
+            <form action="UserLogin.html">
+              <button id="backAppBtn">Back to Home<span class="lnr lnr-arrow-right"></span></button>
+            </form>
+            </div>
+      </div>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>

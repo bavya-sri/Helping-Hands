@@ -47,15 +47,14 @@
             <div class="landing-page-top-container">
                 <nav data-role="Header" class="landing-page-navbar">
                     <div id="navBarLeft">
-                      <a href="UserLogin.html">
-                        <h1>Helping Hands</h1>
-                        </a>                    </div>
+                        <a href="index.html">
+                            <h1>Helping Hands</h1>
+                            </a>                    </div>
                     <div class="landing-page-right-side">
                     <div class="landing-page-links-container">
-                        <span class="landing-page-text"><a href="UserLogin.html">Home</a></span>
-                        <span class="landing-page-text01"><a href="AboutUs.html">About</a></span>
-                        <span class="landing-page-text02"><a href="Contact.html">Contact Us</a></span>
-                        <span class="landing-page-text03"><a href="index.html">Log Out</a></span>
+                        <span class="landing-page-text"><a href="index.html">Home</a></span>
+                        <span class="landing-page-text01"><a href="AboutUs1.html">About</a></span>
+                        <span class="landing-page-text03"><a href="login.html">Log In</a></span>
                     </div>
                     </div>
                 </nav>
@@ -68,35 +67,35 @@
                                 <h1>Donate Now</h1>
                             </div>
                             <form action="donationSucess.html">
-                                
+                                <div >
+                                    <label for="contacgUserName" >Name :</label>
+                                    <input name="fname" id="contactUserName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text" required>
+                                </div>
+                                <div >
+                                    <label for="contactUserEmail" >Email :</label>
+                                    <input name="email" id="contactUserEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
+                                </div>
+                                <div class="flex-column dropdown">
+                                    <select name="type" class="app-select form-control" id="orphanageSelect" required>
+                                        <option value="" selected>What can we help you with?</option>
+                                        <option value="1">General enquiry & feedback</option>
+                                        <option value="2">Topic suggestion</option>
+                                        <option value="3">Tell us your Orphange needs</option>
+                                    </select>
+                                </div>
                                 <div>
-                                    <input type="checkbox" id="donateAnonCKB" onchange="check()" style="height: 15px !important;"><label style="color: black">Donate Anonymously</label>
-                                </div>
-                                <div >
-                                    <label for="donateUserName" >Name :</label>
-                                    <input name="fname" id="donateUserName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text" required>
-                                </div>
-                                <div >
-                                    <label for="donateUserEmail" >Email :</label>
-                                    <input name="email" id="donateUserEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
-                                </div>
-                                <div >
-                                    <label for="donateAmount" >Donation Amount(USD) :</label>
-                                    <input name="amount" id="donateAmount" placeholder="Donation amount (USD)" pattern="[0-9]{1,}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Donation amount (USD)'" class="form-control mt-20" required type="text">
-                                </div>
-                                <div>
-                                    <label for="message" >Message(Optional) :</label>
-                                    <textarea class="form-control mt-20" name="message" placeholder="Message(Optional)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" ></textarea>
+                                    <label for="message" >How can we help you ?</label>
+                                    <textarea class="form-control mt-20" name="message" placeholder="How can we help you ?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required></textarea>
                                 </div>
                                 <div class="row">
-                                    <a href="UserLogin.html" id="backBtnRef">
+                                    <a href="index.html" id="backBtnRef">
                                         <button type="button" class="outline-button-button button Button" id="backBtn">
                                           <span>Back</span>
                                         </button>
                                       </a>
-                                      <a href="" style="padding-left: 15px;" id="donateBtnRef">
+                                      <a href="contactUS1.html" style="padding-left: 15px;" id="donateBtnRef">
                                         <button class="outline-button-button button Button" id="donateBtn">
-                                          <span>Donate</span>
+                                          <span>Contact Us</span>
                                         </button>
                                       </a>
                                 </div>
