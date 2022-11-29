@@ -17,6 +17,15 @@
 //   x[slideIndex-1].style.display = "block";  
 // }
 
+function changeEye(){
+  const togglePassword = document.getElementById('eye');
+  const password = document.getElementById('passwordField');
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  // toggle the eye slash icon
+  this.classList.toggle('fa-eye-slash');
+}
+
 $( document ).ready(function() {
 
   const togglePassword = document.getElementById('eye');
