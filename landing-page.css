@@ -532,12 +532,13 @@ width: 100%;
 }
 
 .about-text{
-  width: 100%;
+  width: 60%;
   color: white;
   border: solid 1px white;
   border-radius: 10px;
   padding-top: 30px;
   font-family:Arial, Helvetica, sans-serif;
+  padding-left: 20px;
 }
 .about-text p{
   text-align: center;
@@ -554,6 +555,6 @@ width: 100%;
 }
 .bordered-box{
 padding-top: 90px;
-padding-left: 200px;
+padding-left: 400px;
 height: auto;
 }
