@@ -239,7 +239,7 @@ button{
   text-align: center;
 }
 .flex-column{
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .flex-column select, input, textarea{
   width: 350px;
@@ -408,7 +408,7 @@ button{
 
 .donate-block {
   width: 400px;
-  padding: 20px;
+  padding: 15px;
   background: #fff;
   border-radius: 5px;
   border: solid 1px black;
