@@ -519,3 +519,37 @@ button{
 .orphanage-text div{
   padding-top: 5%;
 }
+
+.background-img{
+  background:url(../img/header-bg.jpg) no-repeat center center fixed;
+  background-size:cover;
+height: 100%;
+width: 100%;
+}
+
+.about-text{
+  width: 100%;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding-top: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.about-text p{
+  text-align: center;
+  padding-right: 20px;
+}
+.about-text h1{
+  padding-top: 5% ;
+}
+.about-text h4{
+  padding-top: 5% ;
+}
+.about-text div{
+  padding-top: 5%;
+}
+.bordered-box{
+padding-top: 90px;
+padding-left: 200px;
+height: auto;
+}
