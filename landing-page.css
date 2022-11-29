@@ -43,7 +43,7 @@
 .place-card-image {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--dl-radius-radius-radius4);
   border-top-left-radius: var(--dl-radius-radius-radius8);
   border-top-right-radius: var(--dl-radius-radius-radius8);
@@ -479,4 +479,43 @@ button{
 }
 .donate-block .row a{
   padding-left: 65px;
+}
+
+
+/* Orphanage details */
+
+.orphanage-data{
+  border: solid 1px black;
+  height: 540px !important;
+  width: 850px !important;
+  border-radius: 10px;
+}
+
+.orphanage-data img{
+  max-width: 100%;
+  padding-top: 15%;
+  object-fit: contain;
+  padding-left: 10%;
+}
+
+.orphanage-image{
+  width: 100%;
+}
+
+.orphanage-text{
+  width: 100%;
+}
+.orphanage-text p{
+  padding-top: 5% ;
+  text-align: justify;
+  padding-right: 20px;
+}
+.orphanage-text h1{
+  padding-top: 10% ;
+}
+.orphanage-text h4{
+  padding-top: 5% ;
+}
+.orphanage-text div{
+  padding-top: 5%;
 }
