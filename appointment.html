@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
+    <script src="./donate.js"></script> 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}
       body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
@@ -59,63 +61,65 @@
             </div>
           </nav>
         </div>
-        <div id="main-section" class="landing-page-main">
-          <div style="border: solid 1px drakgray; background:lightgray; border-radius:5px;">
-          <div style="padding: 35px 30px 30px 40px;">
-            <div class="col-md-6" style="padding-top: 15px;">
-              <form action="UserLogin.html">
-                <button id="backAppBtn">Back<span class="lnr lnr-arrow-right"></span></button>
-              </form>
-              </div>
-            <div style="padding-bottom: 5px">
-              <h2>Schedule an Appointment</h1>
-            </div>
-          <form action="confirmationApp.html" id="ft-form">
-            <fieldset>
-              <label>
-                Name
-                <div><input type="text" name="name" style="width: 350px !important;" required></div>
-              </label>
-              <div class="two-cols">
-                <label>
-                  Email address
-                  <input type="email" name="email" required>
-                </label>
-                <label>
-                  Phone number
-                  <input type="tel" name="phone">
-                </label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="two-cols">
-                <label>
-                  Date
-                  <input type="date" name="Appointment request" required>
-                </label>
-                <div class="inline">
-                  <label>
-                    <input type="hidden" name="Morning desired" value="no">
-                    <input type="checkbox" name="Morning desired" value="yes">
-                    Morning
-                  </label>
-                  <label>
-                    <input type="hidden" name="Afternoon desired" value="no">
-                    <input type="checkbox" name="Afternoon desired" value="yes">
-                    Afternoon
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <div class="btns">
-              <input type="submit" value="Schedule">
-            </div>
-          </form>
+            <div id="main-section" class="donate-page-main">
+              <div class="donate-area relative section-gap" id="donate">
+              <div class="contact-right">
+                  <div class="donate-block" id="myForm">
+                      <div id="loginHeading">
+                          <h1>Schedule an Appointment</h1>
+                      </div>
+                      <label for ="orphanageSelect" >Orphanage</label>
+                      <form action="confirmationApp.html">
+                          <div class="flex-column dropdown">
+                              <select name="type" class="app-select form-control" id="appOrphanageSelect" required>
+                                  <option value="" selected>Select Orphanage</option>
+                                  <option value="1">Transparent Hands</option>
+                                  <option value="2">Feeding America</option>
+                                  <option value="3">Feed the Children</option>
+                                  <option value="4">United Way</option>
+                                  <option value="5">Direct Relief</option>
+                                  <option value="6">World Relief</option>
+                              </select>
+                          </div>
+                          <div >
+                              <label for="appUserName" >Name :</label>
+                              <input name="fname" id="appUserName" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" type="text" required>
+                          </div>
+                          <div >
+                              <label for="appUserEmail" >Email :</label>
+                              <input name="email" id="appUserEmail" placeholder="Enter email address(xxxxx@xxxx.com)" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required type="email">
+                          </div>
+                          <div>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input class="form-control mt-20" type="tel" id="phoneNumber" placeholder="10-digit phone umber" pattern="[0-9]{10}" name="phone" required>
+                          </div>
+                          <div>
+                            <label for="appDate">Date :</label>
+                            <input type="datetime-local" id="appDate" required>
+                            <script>
+                              var today = new Date().toISOString().slice(0, 16);
+                              document.getElementById("appDate").min = today;
+                            </script>
+                          </div>
+                          <div class="row">
+                              <a href="" id="backBtnRef">
+                                  <button type="button" class="outline-button-button button Button" onclick="backButton1()" id="backBtn">
+                                    <span>Back</span>
+                                  </button>
+                                </a>
+                                <a href="" style="padding-left: 15px;" id="donateBtnRef">
+                                  <button class="outline-button-button button Button" id="donateBtn">
+                                    <span>Schedule</span>
+                                  </button>
+                                </a>
+                          </div>
+                      </form>
+                  </div>
+              </div>                    
+          </div>
+      </div>
 
         </div>
         </div>
-      </div>
-      </div>
-    </div>
   </body>
 </html>

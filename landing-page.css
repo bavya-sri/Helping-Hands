@@ -50,11 +50,13 @@
 }
 .place-card-container1 {
   width: 100%;
+  height: 130px;
   display: flex;
   padding: var(--dl-space-space-unit);
   align-items: center;
   flex-direction: column;
-  border: solid 1px darkgray;
+  border-top: 1px solid lightgray;
+  border-radius: 3px;
 }
 .place-card-text {
   font-size: 20px;
@@ -229,7 +231,6 @@ button{
 .donate-area{
   width: 100%;
   height: 100%;
-  background:url(../img/header-bg.jpg) no-repeat center center fixed;
   background-size:cover;
   cursor: pointer;
 }
@@ -262,7 +263,7 @@ button{
   border-radius:0;
   background-color:transparent;
   border:1px solid #656463;
-  color:#fff;
+  color:black;
   font-size:14px;
   padding:12px
 }
@@ -327,7 +328,7 @@ button{
   border: 1px solid #ccc;
   margin-bottom: 20px;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Poppins;
   padding: 0 20px 0 50px;
   outline: none;
 }
@@ -367,7 +368,7 @@ button{
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Poppins;
   outline: none;
   cursor: pointer;
 }
@@ -376,11 +377,106 @@ button{
 }
 
 .login-block button:hover {
-  background: darkgray;
+  background: lightgray;
 }
 
-#backBtn{
-  color: white;
-  border: solid 1px white;
-  width: 10%;
+.donate-block button:hover {
+  background: lightgray;
+}
+
+.button-section button:hover{
+  background: lightgray;
+}
+
+.password-container{
+  position: relative;
+}
+.password-container input[type="password"],
+.password-container input[type="text"]{
+  width: 100%;
+  box-sizing: border-box;
+}
+.fa-eye{
+  position: absolute;
+  top: 43%;
+  right: 4%;
+  cursor: pointer;
+  color: lightgray;
+}
+
+/* donate page */
+
+.donate-block {
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px black;
+  margin: 0 auto;
+  background-color: lightgray !important;
+}
+
+.donate-block h1 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.donate-block input {
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: Poppins;
+  padding: 0 20px 0 50px;
+  outline: none;
+}
+
+.donate-block input#username {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+  background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+  background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+  background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+  background-size: 16px 80px;
+}
+
+.donate-block input:active, .donate-block input:focus {
+  border: 1px solid black;
+}
+
+.donate-block button {
+  height: 40px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Poppins;
+  outline: none;
+  cursor: pointer;
+  padding-top: 11px !important;
+}
+.donate-block .row a{
+  padding-left: 65px;
 }

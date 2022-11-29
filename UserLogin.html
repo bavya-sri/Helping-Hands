@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}
@@ -45,12 +46,15 @@
       <div class="landing-page-container">
         <div class="landing-page-top-container" id="navbar">
           <nav data-role="Header" class="landing-page-navbar">
+            
             <div id="navBarLeft">
+              <a href="UserLogin.html">
               <h1>Helping Hands</h1>
+              </a>
             </div>
             <div class="landing-page-right-side">
               <div class="landing-page-links-container">
-                <span class="landing-page-text"><a href="UserLogin.html">Home</a></span>
+                <span class="landing-page-text"><a href="index.html">Home</a></span>
                 <span class="landing-page-text01"><a href="#">About</a></span>
                 <span class="landing-page-text02"><a href="#">Contact Us</a></span>
                 <span class="landing-page-text03"><a href="index.html">LogOut</a></span>
@@ -60,26 +64,30 @@
         </div>
         <div id="main-section" class="landing-page-main">
           <h1>Orphanages</h1>
-          <div class="outline-button-container" style="padding-top: 10px;">
+          <div class="button-section outline-button-container" style="padding-top: 10px;">
             <a href="donate.html">
-              <button class="outline-button-button button Button">
+              <button class="outline-button-button button Button" id="donateBtn">
                 <span>Donate</span>
               </button>
             </a>
             <a href="appointment.html" style="padding-left: 15px;">
-              <button class="outline-button-button button Button">
+              <button class="outline-button-button button Button" id="visitBtn">
                 <span>Visit an Orphanage</span>
               </button>
             </a>
           </div>
 
           <div class="landing-page-cards-container">
+            <a href="Orphanage1.html">
+            <button type="button">
             <div class="place-card-container">
+              <div>
               <img
                 alt="image"
                 src="Or1.png"
                 class="place-card-image"
-              />
+              />  
+              </div>              
               <div class="place-card-container1">
                 <span class="place-card-text"><span>Transparent Hands</span></span>
                 <span class="place-card-text1">
@@ -89,12 +97,18 @@
                 </span>
               </div>
             </div>
+            </button>
+            </a>
+            <a href="Orphanage2.html">
+              <button type="button">
             <div class="place-card-container">
+              <div>
               <img
                 alt="image"
                 src="Or5.png"
                 class="place-card-image"
               />
+              </div>
               <div class="place-card-container1">
                 <span class="place-card-text"><span>Feeding America</span></span>
                 <span class="place-card-text1">
@@ -104,6 +118,11 @@
                 </span>
               </div>
             </div>
+                            
+          </button>
+        </a>
+        <a href="Orphanage3.html">
+          <button type="button">
             <div class="place-card-container">
               <img
                 alt="image"
@@ -119,6 +138,11 @@
                 </span>
               </div>
             </div>
+                            
+          </button>
+        </a>
+        <a href="Orphanage4.html">
+          <button type="button">
             <div class="place-card-container">
               <img
                 alt="image"
@@ -134,6 +158,11 @@
                 </span>
               </div> 
             </div>
+                            
+          </button>
+        </a>
+        <a href="Orphanage5.html">
+          <button type="button">
             <div class="place-card-container">
               <img
                 alt="image"
@@ -149,6 +178,11 @@
                 </span>
               </div> 
             </div>
+                            
+          </button>
+        </a>
+        <a href="Orphanage6.html">
+          <button type="button">
             <div class="place-card-container">
               <img
                 alt="image"
@@ -164,6 +198,9 @@
                 </span>
               </div> 
             </div>
+                            
+          </button>
+        </a>
           </div>
         </div>
         <div class="landing-page-footer">
