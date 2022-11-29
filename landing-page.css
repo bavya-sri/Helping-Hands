@@ -86,7 +86,7 @@
   padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
+	background-color:lightblue;
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .landing-page-navbar {
@@ -308,7 +308,7 @@ button{
   border-radius: 5px;
   border: solid 1px black;
   margin: 0 auto;
-  background-color: lightgray !important;
+  background-color: #e9f2f2 !important;
 }
 
 .login-block h1 {
@@ -318,6 +318,10 @@ button{
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.button-group button:hover{
+background-color: lightblue !important;
 }
 
 .login-block input {
@@ -377,15 +381,15 @@ button{
 }
 
 .login-block button:hover {
-  background: lightgray;
+  background: lightblue;
 }
 
 .donate-block button:hover {
-  background: lightgray;
+  background: lightblue;
 }
 
 .button-section button:hover{
-  background: lightgray;
+  background: lightblue;
 }
 
 .password-container{
@@ -413,7 +417,7 @@ button{
   border-radius: 5px;
   border: solid 1px black;
   margin: 0 auto;
-  background-color: lightgray !important;
+  background-color: #e9f2f2 !important;
 }
 
 .donate-block h1 {
